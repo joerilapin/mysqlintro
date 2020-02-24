@@ -51,6 +51,7 @@ This means that the hacker now can steal all your (customer) data, and even eras
 
 You could place it behind a firewall or VPN but you still have a dangerous backdoor open if some attacker ever gets access to your network.
 The mission
+
 Step 1: Create a database
 
     Go to your local database manager
