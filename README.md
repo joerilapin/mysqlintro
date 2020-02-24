@@ -29,7 +29,7 @@ Technically there is not much difference between both versions, but in the last 
 mysqljoke.png
 Install a database manager
 
-Database managers are used to manage local and remote databases. They discover databases based on the Web server and provide the ability to connect to any of the databases residing in the network. They provide a handful of administrative functionalities such as managing tables, views and stored procedures, as well as run ad hoc queries.
+Database managers are used to manage local and remote databases. They discover databases based on the Web server and provide the ability to connect to any of the databases residing in the network. They provide a handful of administrative functionalities such as managing tables, views and stored procedures, as well as run ad hoc queries=An Ad-hoc query is one created to provide a specific recordset from any or multiple merged tables available on the DB server. These queries usually serve a single-use purpose, and may not be necessary to incorporate into any stored procedure to run again in the future.
 
 DB managers connect to the database and display information from catalogs that are part of a database. DB managers can have a set of command-line parameters, which allow them to initiate features and functions external to the graphical user interface.
 
