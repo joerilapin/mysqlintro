@@ -1,21 +1,30 @@
 <?php
-
 declare(strict_types=1);
 
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-require 'connection.php';
 
-try {
-    //$conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
-    // set the PDO error mode to exception
-    openconnection()->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
+require 'View/insert.php';
+require 'Model/connection.php';
+
+$objectHere = new connection();
+$returnValue = $objectHere->openConnection();
+
+if ($_POST){
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $username = $_POST['username'];
+    $github = $_POST['github'];
+    $linkedin = $_POST['linkedin'];
+    $email = $_POST['email'];
+    $preferred_language = $_POST['preferred_language'];
+    $avatar = $_POST ['avatar'];
+    $video = ['video'];
+    $quote = ['quote'];
+    $quote_author = ['quote_author'];
+    $create_at = ['create_at']; = ['create_at'];
+
+
 }
-catch(PDOException $e)
-{
-    echo "Connection failed: " . $e->getMessage();
-}
-?>
