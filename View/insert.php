@@ -19,10 +19,8 @@
     <form action="../index.php" method="post">
 
          <section>
-
-             <label for="first_name"></label>
+             <label for="first_name">firstName:</label>
              <input id="first_name" name="first_name" required>
-        <br/>;
         </section>
         <section>
             <label for="last_name">lastName:</label>
@@ -68,10 +66,7 @@
             <label for="quote_author">quote_author:</label>
             <input id="quote_author" name="quote_author" required>
         </section>
-        <section>
-            <label for="create_at">quote_author:</label>
-            <input id="create_at" name="create_at" required>
-        </section>
+
         <input type="submit" name="submit">
     </form>
     </div>

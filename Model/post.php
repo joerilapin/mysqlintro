@@ -3,8 +3,8 @@
 
 class Post
 {
-    private $firstName;
-    private $lastName;
+    private $first_name;
+    private $last_name;
     private $username;
     private $linkedin;
     private $github;
@@ -15,9 +15,15 @@ class Post
     private $quote;
     private $quoteAuthor;
 
-    public function __construct(string $first_name, string $last_name, string $username, string $linkedin,
-                                string $github, string $email, string $preferredLang, string $avatar, string $video,
-                                string $quote, string $quoteAuthor)
+    //constructor wordt gebruikt om geen ongeldige input te krijgen, zoals lege velden;
+    // zodat alles ingevuld is
+
+    public function __construct(string $first_name, string $last_name,
+                                string $username, string $linkedin,
+                                string $github, string $email,
+                                string $preferredLang, string $avatar,
+                                string $video, string $quote,
+                                string $quoteAuthor)
     {
         $this->first_name = $first_name;
         $this->last_name = $last_name;
@@ -32,29 +38,29 @@ class Post
         $this->quoteAuthor = $quoteAuthor;
     }
 
-    //setters
+    //getters
 
-    public function setFirstName(): string
+    public function getFirstName(): string
     {
         return $this->first_name;
     }
 
-    public function setLastName(): string
+    public function getLastName(): string
     {
         return $this->last_name;
     }
 
-    public function setUserName(): string
+    public function getUserName(): string
     {
         return $this->username;
     }
 
-    public function setLinkedin(): string
+    public function getLinkedin(): string
     {
         return $this->linkedin;
     }
 
-    public function setGithub(): string
+    public function getGithub(): string
     {
         return $this->github;
     }
@@ -87,9 +93,5 @@ class Post
     public function setQuoteAuthor(): string
     {
         return $this->quoteAuthor;
-    }
-    public function setCreatedAt(): string
-    {
-        return $this->quoteCreatedAt;
     }
 }
