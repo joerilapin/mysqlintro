@@ -17,7 +17,9 @@ class Post
 
     //constructor wordt gebruikt om geen ongeldige input te krijgen, zoals lege velden;
     // zodat alles ingevuld is
-
+    //PHP 5 allows developers to declare constructor methods for classes. Classes which have a constructor method
+    // call this method on each newly-created object, so it is suitable for any initialization that the object may
+    // need before it is used.
     public function __construct(string $first_name, string $last_name,
                                 string $username, string $linkedin,
                                 string $github, string $email,

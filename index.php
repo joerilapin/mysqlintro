@@ -12,6 +12,7 @@ require 'Model/connection.php';
 require 'Model/post.php';
 require 'Model/statement.php';
 require 'Controller/homepagecontroller.php';
+require 'Model/UserInformation.php';
 
 //homepage laten zien , we maken object aan
 $controller = new HomePageController();

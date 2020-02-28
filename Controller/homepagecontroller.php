@@ -1,6 +1,6 @@
 <?php
 
-
+//in the Model are the Classes with its propeerties and Methods
 class HomePageController
 {
     public function render($post){
@@ -17,9 +17,18 @@ class HomePageController
         //als de waarde true is bij Post, dan voert hij alles uit daarachter
         if ($_SERVER['REQUEST_METHOD'] == 'POST'){
             //hier creatie van object van de klasse post
-            $formInfo = new Post($post['first_name'], $post['last_name'], $post['username'], $post['linkedin'], $post['github'],
-                $post['email'], $post['preferred_language'], $post['avatar'], $post['video'],
-                $post['quote'], $post['quote_author']);
+            $formInfo = new Post(
+                                $post['first_name'],
+                                $post['last_name'],
+                                $post['username'],
+                                $post['linkedin'],
+                                $post['github'],
+                                $post['email'],
+                                $post['preferred_language'],
+                                $post['avatar'],
+                                $post['video'],
+                                $post['quote'],
+                                $post['quote_author']);
             $statement = new Statement();
             $sqlInsert = $statement->generateInsert();
             try {
