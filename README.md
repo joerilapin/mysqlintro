@@ -1,3 +1,5 @@
+https://joerilapin.github.io/mysqlintro/
+
 # mysqlintro
 intro to MySQL
 Challenge: MySQL
